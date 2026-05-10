@@ -1,12 +1,18 @@
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { autenticar } from "../services/servicoAutenticacao";
 
-export default function TelaAutenticacao({ onAutenticado }: any) {
+interface Props {
+  onAutenticado: () => void;
+}
+
+export default function TelaAutenticacao({ onAutenticado }: Props) {
   async function iniciarAutenticacao() {
     const sucesso = await autenticar();
 
     if (sucesso) {
       onAutenticado();
+    } else {
+      console.log("Autenticação não concluída.");
     }
   }
 

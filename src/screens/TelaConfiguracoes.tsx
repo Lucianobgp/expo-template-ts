@@ -1,6 +1,10 @@
 import { View, Text, TouchableOpacity, StyleSheet, Alert } from "react-native";
 
-export default function TelaConfiguracoes({ onSair }: any) {
+interface Props {
+  onSair: () => void;
+}
+
+export default function TelaConfiguracoes({ onSair }: Props) {
   function confirmarSaida() {
     Alert.alert("Sair do app", "Tem certeza que deseja sair?", [
       {
@@ -13,6 +17,10 @@ export default function TelaConfiguracoes({ onSair }: any) {
         onPress: () => {
           if (onSair) {
             onSair();
+          } else {
+            console.warn(
+              "Atenção: A função 'onSair' não foi definida ou passada para esta tela.",
+            );
           }
         },
       },

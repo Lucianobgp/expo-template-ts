@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <NavegacaoAbas />
+      <NavegacaoAbas onSair={() => setAutenticado(false)} />
     </NavigationContainer>
   );
 }

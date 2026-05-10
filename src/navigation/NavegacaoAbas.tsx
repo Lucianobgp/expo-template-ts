@@ -6,7 +6,11 @@ import TelaConfiguracoes from "../screens/TelaConfiguracoes";
 
 const Tab = createBottomTabNavigator();
 
-export default function NavegacaoAbas() {
+interface NavegacaoAbasProps {
+  onSair: () => void;
+}
+
+export default function NavegacaoAbas({ onSair }: NavegacaoAbasProps) {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -27,7 +31,9 @@ export default function NavegacaoAbas() {
       })}
     >
       <Tab.Screen name="Início" component={TelaInicial} />
-      <Tab.Screen name="Configurações" component={TelaConfiguracoes} />
+      <Tab.Screen name="Configurações">
+        {(props) => <TelaConfiguracoes {...props} onSair={onSair} />}
+      </Tab.Screen>
     </Tab.Navigator>
   );
 }
