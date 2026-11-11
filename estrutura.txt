@@ -1,0 +1,30 @@
+.
+├── app.json
+├── App.tsx
+├── assets
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   ├── LogoLuAppsSf.png
+│   └── splash-icon.png
+├── eas.json
+├── estrutura.txt
+├── .gitignore
+├── index.ts
+├── package.json
+├── package-lock.json
+├── passos-instalacao.md
+├── src
+│   ├── docs
+│   │   └── configuracao.md
+│   ├── navigation
+│   │   └── NavegacaoAbas.tsx
+│   ├── screens
+│   │   ├── TelaAutenticacao.tsx
+│   │   ├── TelaConfiguracoes.tsx
+│   │   └── TelaInicial.tsx
+│   └── services
+│       └── servicoAutenticacao.ts
+└── tsconfig.json
+
+7 directories, 21 files

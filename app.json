@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-template-ts",
-    "slug": "expo-template-ts",
+    "name": "app-fin-pessoal",
+    "slug": "app-fin-pessoal",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.luapps.expotemplatets"
+      "bundleIdentifier": "com.luapps.appfinpessoal"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,18 +23,19 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.luapps.expotemplatets"
+      "package": "com.luapps.appfinpessoal"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "f4b04b9f-397d-4a60-927d-70206c6785b9"
-      }
-    },
     "plugins": [
       "expo-status-bar"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c2304f3f-2be0-495d-885b-ee81d1a2ef23"
+      }
+    },
+    "owner": "lucianobgp"
   }
 }
